@@ -18,37 +18,41 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
     <TextView
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="178dp"
         android:layout_marginLeft="178dp"
-        android:layout_marginTop="44dp"
         android:layout_marginEnd="175dp"
         android:layout_marginRight="175dp"
         android:text="Taxi Admin App"
         android:textColor="#F3F8F8"
         android:textSize="40sp"
         app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
         android:id="@+id/tv2"
-        android:textColor="#F3F3F3"
-        android:textColorHint="#D6EDEB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="serif-monospace"
         android:text="Create New Account"
+        android:textColor="#F3F3F3"
+        android:textColorHint="#D6EDEB"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <EditText
         android:id="@+id/txt_name"
@@ -60,14 +64,14 @@
         android:hint="Full Name"
         android:inputType="textPersonName"
         android:padding="20sp"
+        android:textColor="#F3F3F3"
+        android:textColorHint="#D6EDEB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2"
-        app:layout_constraintVertical_bias="0.17000002"
-        android:textColor="#F3F3F3"
-        android:textColorHint="#D6EDEB"/>
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <EditText
         android:id="@+id/txt_email"
@@ -121,7 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_password_1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register"
@@ -140,13 +144,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already Registered? Login Here"
+        android:textColor="#DA8403"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        app:layout_constraintVertical_bias="0.25"
-        android:textColor="#DA8403"
-        android:textSize="20sp"/>
+        app:layout_constraintTop_toBottomOf="@id/btn_register"
+        app:layout_constraintVertical_bias="0.17000002" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
